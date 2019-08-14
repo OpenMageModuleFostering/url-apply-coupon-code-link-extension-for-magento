@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+* @category    MP
+* @package     MP_AutoApplyCoupon
+* @copyright   MagePhobia (http://www.magephobia.com)
+-->
+<config>
+    <modules>
+        <MP_AutoApplyCoupon>
+            <version>0.1.0</version>
+        </MP_AutoApplyCoupon>
+    </modules>
+    <global>
+        <models>
+            <mp_autoapplycoupon>
+                <class>MP_AutoApplyCoupon_Model</class>
+            </mp_autoapplycoupon>
+        </models>
+        <helpers>
+            <mp_autoapplycoupon>
+                <class>MP_AutoApplyCoupon_Helper</class>
+            </mp_autoapplycoupon>
+        </helpers>
+    </global>>
+    <frontend>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <mp_autoapplycoupon_observer>
+                        <type>singleton</type>
+                        <class>MP_AutoApplyCoupon_Model_Observer</class>
+                        <method>controllerActionPredispatch</method>
+                    </mp_autoapplycoupon_observer>
+                </observers>
+            </controller_action_predispatch>
+            <checkout_cart_add_product_complete>
+                <observers>
+                    <mp_autoapplycoupon_observer>
+                        <type>singleton</type>
+                        <class>MP_AutoApplyCoupon_Model_Observer</class>
+                        <method>checkoutCartAddProductComplete</method>
+                    </mp_autoapplycoupon_observer>
+                </observers>
+            </checkout_cart_add_product_complete>
+            <checkout_cart_save_after>
+                <observers>
+                    <mp_autoapplycoupon_observer>
+                        <type>singleton</type>
+                        <class>MP_AutoApplyCoupon_Model_Observer</class>
+                        <method>checkoutCartAddProductComplete</method>
+                    </mp_autoapplycoupon_observer>
+                </observers>
+            </checkout_cart_save_after>
+        </events>
+    </frontend>
+</config>

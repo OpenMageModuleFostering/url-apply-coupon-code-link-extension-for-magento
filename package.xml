@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+    <name>url-apply-coupon-code-link-extension-for-magento</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.magephobia.com/magento/extensions/magephobia-software-license">MagePhobia Software License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Allows merchants to use links to any Magento&#xAE; page and apply coupon code on the fly to existing or future cart&#xD;
+</summary>
+    <description>&lt;h3&gt;Magento&#xAE; 2 ready extension.&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;&#xD;
+&#xD;
+Magento&#xAE; merchants often struggle with email campaigns or blog posts that include coupon codes. While promotional emails is a great conversion tool native Magento&#xAE; customers need to copy the coupon code from the email, shop, add items to cart, and then apply the coupon code, which normally result in lower conversion rate. &lt;br /&gt;&lt;br /&gt;&#xD;
+&#xD;
+Apply Coupon Code Link extension for Magento&#xAE; empowers merchants to use links in promotional emails, blog posts, and newsletter campaigns to any Magento&#xAE; page and apply coupon code on the fly to existing or future cart (when product will be added to cart later - after visiting promo code link) without a need for a customer to manually copy, input, and apply Coupon Code on a Shopping Cart Page. The link would look like &lt;br /&gt; http://www.magento-site.com/?coupon=Coupon_Code &lt;br /&gt;&lt;br /&gt;&#xD;
+&#xD;
+Additionally, Apply Coupon Code URL extension for Magento&#xAE; allows merchants to use links to land customers into their Abandoned Shopping Cart via Abandoned Shopping Cart emails and at the same time apply promotional coupon code via the same URL. The link would look like &lt;br /&gt; http://www.magento-site.com/?coupon=Coupon_Code&amp;amp;quote_id=Cart_Id . &lt;br /&gt;Cart_Id should be pulled from sales_flat_quote table while building a list of Abandoned cart emails by a merchant.&lt;br /&gt;&lt;br /&gt;&#xD;
+&#xD;
+&#xD;
+&lt;span style="font-size: 18px; font-weight: 800;"&gt;Please refer to screenshots for more information.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&#xD;
+&#xD;
+&lt;span style="font-size: 18px; font-weight: 800;"&gt;&lt;a href="http://demo.magephobia.com/mp_auto_apply_coupon/women/tops-blouses.html?quote_id=680&amp;coupon=test"&gt;Frontend Demo&lt;/a&gt; | &lt;a href="http://demo.magephobia.com/mp_auto_apply_coupon/index.php/admin/"&gt;Backend Demo&lt;/a&gt; (Username/Password is presented on admin login screen).&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Please note that front end demo has a link   http://demo.magephobia.com/mp_auto_apply_coupon/women/tops-blouses.html?quote_id=680&amp;coupon=test representing GET parameters Cart Id 680 and Coupon Code 'Test' , it lands Magento&#xAE; customer to his cart and applies Coupon Code 'Test' during landing. &lt;br /&gt; Cart Id is optional, Coupon Code URL link will work without it. &lt;br /&gt;This feature dramatically increase conversion rate.&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;&#xD;
+&#xD;
+&lt;span style="font-size: 18px; font-weight: 800;"&gt;MagePhobia Apply Coupon Code Link extension includes free updates for 1 year + 90 days free support.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&#xD;
+&#xD;
+Extension is Compatible with Magento&#xAE; CE 1.5+ and Magento&#xAE; CE 2.0+&lt;br /&gt;&lt;br /&gt;&#xD;
+&#xD;
+&lt;span style="font-size: 18px; font-weight: 800;"&gt;Please &lt;a href="https://www.magephobia.com/customer-support"&gt;Contact Us&lt;/a&gt; if you have any questions. 90 days money back guarantee!&lt;br /&gt;&lt;/span&gt;</description>
+    <notes>Extension v.1.0.0 added</notes>
+    <authors><author><name>MagePhobia</name><user>MagePhobia</user><email>support@magephobia.com</email></author></authors>
+    <date>2016-01-21</date>
+    <time>09:14:40</time>
+    <contents><target name="magelocal"><dir name="MP"><dir name="AutoApplyCoupon"><dir name="Helper"><file name="Data.php" hash="84a72c8754d6f6d67dd0dba3781f3ef5"/></dir><dir name="Model"><file name="Observer.php" hash="3ee4e9e6ed499f7d6543d39b6d728289"/></dir><dir name="etc"><file name="config.xml" hash="81faaf87ab574322b5b40b57699e0071"/></dir></dir></dir></target><target name="mage"><dir name="app"><dir name="etc"><dir name="modules"><file name="MP_AutoApplyCoupon.xml" hash="e6ae26e0bbfd08dc4c82a86d3da5783d"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.1</min><max>5.7.1</max></php></required></dependencies>
+</package>
