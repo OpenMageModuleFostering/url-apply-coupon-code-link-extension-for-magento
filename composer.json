@@ -1,17 +1,5 @@
 {
-    "name": "OpenMageModuleFostering/url-apply-coupon-code-link-extension-for-magento",
-    "type": "magento-module",
-    "license": "MagePhobia-Software-License",
-    "homepage": "",
-    "description": "Allows merchants to use links to any Magento® page and apply coupon code on the fly to existing or future cart
-",
-    "authors": [
-    {
-        "name": "MagePhobia",
-        "email": "support@magephobia.com"
-    }
-],
-    "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+    "keywords": [
+        "openmage-module"
+    ]
 }
